@@ -1,1 +1,85 @@
+.wholePage{
+    width: auto;
+    height: auto;
+}
+.row{
+    display:block;
+    width:auto;
+}
+.yellow{
+    display: flex;  
+}
+.yellow .content{
+  
+    height:100px;
+    margin: 10px;
+    background-color: yellow;
+}
+.red{
+    display: flex;  
+}
+.red .content{
+    
+    height:100px;
+    margin: 10px;
+    background-color:red;
+}
+.blue{
+    display: flex;
+    
+}
+.blue .content{
+    height:100px;
+    margin: 10px;
+    background-color:blue;
+}
 
+/*.........min-width(1024).....*/
+@media screen and (min-device-width:1024px) {
+        
+    .yellow .content{
+        flex: 1 1 auto;
+    }
+    
+    .red .content{
+        flex: 1 1 auto;
+    }
+    
+    .blue .content{
+        flex: 1 1 auto;
+    }
+    
+}
+/*...........min-width:768px...*/
+@media screen and (min-device-width:768px) and (max-device-width:1024px){
+
+.yellow .content{ 
+    flex: 1 1 auto;
+}
+
+.red .content{
+    flex: 1 1 auto;
+}
+
+
+.blue{   
+    flex-direction: column;
+}
+
+}
+
+/*..........min-width:320px ....*/
+@media screen and (min-device-width:320px) and (max-device-width:767px){
+
+.yellow{
+    flex-direction: column;
+}
+
+.red{
+    flex-direction: column;
+}
+
+.blue {
+    flex-direction: column;
+}
+}
